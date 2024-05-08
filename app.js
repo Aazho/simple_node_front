@@ -31,7 +31,7 @@ app.post('/submit', async (req, res) => {
     }
   } catch (error) {
     console.error('Error:', error.message);
-    res.status(500).send('Internal server error');
+    res.status(500).send(`Internal server error, couldnt reach ${fastApiUrl}`);
   }
 });
 
